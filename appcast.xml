@@ -3,35 +3,34 @@
     <channel>
         <title>Open</title>
         <item>
-            <title>0.1.5</title>
-            <pubDate>Tue, 17 Nov 2026 22:10:04 -0700</pubDate>
+            <title>0.1.6</title>
+            <pubDate>Thu, 19 Nov 2026 14:07:07 -0700</pubDate>
             <link>https://sergeserb2.github.io/open-releases/</link>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Open 0.1.5 (7)
+            <description sparkle:format="markdown"><![CDATA[# Open 0.1.6 (8)
 
 Engine: Chromium 156.0.8078.48 · CEF 4fa4ab5. macOS 26 or later, Apple silicon.
 
-## Pinned tabs and Favorites
-- The × on a pinned tab closes it, also after you reopen Open.
-- On the selected pinned tab, − unloads the tab and keeps it in the sidebar.
-- ⌘W on a pinned tab or a Favorite takes it back to its pinned page. Open then selects the tab you used before it.
-- Favorites no longer show a close button.
-- After a tab closes, the row that moves under the pointer shows its hover state at once.
+## App icon
+- Open's icon is now a native macOS 26 icon. macOS draws its shape, edge light, glass and shadow, as it does for Apple's icons. It follows the Light, Dark, Clear and Tinted icon styles.
+- The other icons in Settings › Appearance › App icon now have the same shape, size and edge as Apple's icons in the Dock.
+- If the Dock still shows the old icon after updating, log out and back in.
 
-## Motion
-- Split View: panes move smoothly when you add, remove or close one. Close This Pane keeps the page visible while its pane closes.
-- Switching Spaces: the sidebar starts to slide as soon as you click, press a key or swipe, and it no longer pauses at the end.
-- Peek shows its card at once and fades in the page when the page is ready.
+## History
+- Page titles in the History list are no longer cut off, and each row shows its address again.
+- Pages without an icon show a globe in the right colour for the light or dark theme.
+- A long profile name fits in the filter button.
 
-## Other changes
-- An app icon that you choose in Settings now has the same size as other icons in the Dock.
-- The Find bar fits in narrow Split View panes.
-- Fixes for bugs found in reviews of settings, the command bar, saved windows and tabs, the browser window, the Library and media.
+## Switching Spaces
+- When you switch Spaces, the page no longer goes blank. The old page stays until the new one is drawn.
+
+## Welcome
+- The Basics page has a new layout, with short clips recorded from Open itself.
 ]]></description>
-            <enclosure url="https://github.com/SergeSerb2/open-releases/releases/download/v0.1.5/Open-0.1.5.dmg" length="158290275" type="application/octet-stream" sparkle:edSignature="gFoA0uZGPCf2cu7KWLglHszk/ApWBUXE+RYj+kxPS14aUBigCsuRBpweRTUNCTrC3Jru4lfanopxCv1it1niBw=="/>
+            <enclosure url="https://github.com/SergeSerb2/open-releases/releases/download/v0.1.6/Open-0.1.6.dmg" length="165988522" type="application/octet-stream" sparkle:edSignature="oiUdTEgjJmBsJgJdIsG2eZZ4dTaU0zKF0iN5DaxfkOCm9XDpZTlN3qDVJYENaPRP8qTOzTAZM+c2hE9zIwcGAg=="/>
         </item>
     </channel>
 </rss>
