@@ -3,34 +3,49 @@
     <channel>
         <title>Open</title>
         <item>
-            <title>0.1.6</title>
-            <pubDate>Thu, 19 Nov 2026 14:07:07 -0700</pubDate>
+            <title>0.1.7</title>
+            <pubDate>Mon, 23 Nov 2026 11:28:15 -0700</pubDate>
             <link>https://sergeserb2.github.io/open-releases/</link>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Open 0.1.6 (8)
+            <description sparkle:format="markdown"><![CDATA[# Open 0.1.7 (9)
 
 Engine: Chromium 156.0.8078.48 · CEF 4fa4ab5. macOS 26 or later, Apple silicon.
 
-## App icon
-- Open's icon is now a native macOS 26 icon. macOS draws its shape, edge light, glass and shadow, as it does for Apple's icons. It follows the Light, Dark, Clear and Tinted icon styles.
-- The other icons in Settings › Appearance › App icon now have the same shape, size and edge as Apple's icons in the Dock.
-- If the Dock still shows the old icon after updating, log out and back in.
+This release is mostly about reliability. We fixed more than 500 bugs across the whole browser.
 
-## History
-- Page titles in the History list are no longer cut off, and each row shows its address again.
-- Pages without an icon show a globe in the right colour for the light or dark theme.
-- A long profile name fits in the filter button.
+## Your data is safer
+- Notes and Easels no longer lose newer text when the same item is open in two places. Long Notes and Easels open again after you save them.
+- Deleting a Profile keeps your archived Favorites. Undoing a new Profile removes its files.
+- Opening a Blank Window no longer overwrites your saved windows and tabs.
+- One folder that cannot be removed no longer stops Open from launching.
+- Imports from Arc, Chrome, Firefox and Safari keep more of your data: split views, routing rules, passwords with unusual dates or rows, and Safari CSV files with quotes.
+- Importing invalid shortcuts no longer erases your custom shortcuts.
+- Cmd+Shift+T restores the closed tab even when the Archive changes at the same time.
 
-## Switching Spaces
-- When you switch Spaces, the page no longer goes blank. The old page stays until the new one is drawn.
+## Privacy and Incognito
+- Incognito windows no longer write Picture in Picture, translation, Developer Mode or download choices into your normal Profile.
+- Extension popups close when an Incognito session ends or a Profile is deleted.
+- Air Traffic Control rules that start with a web address no longer match look-alike sites.
+- Clear Browsing Data works even when no normal window is open.
+- AppleScript cannot run page JavaScript through a `javascript:` address unless you allow it.
 
-## Welcome
-- The Basics page has a new layout, with short clips recorded from Open itself.
+## Quitting and closing
+- Open no longer hangs on Quit when a page in a background tab asks "Leave site?".
+- Closing a window or tab during Quit no longer blocks later Quits.
+
+## Security keys and passkeys
+- When a site allows both, Open shows separate choices for a USB security key and for a phone or tablet. It no longer goes straight to the phone QR code.
+- The passkey sheet appears on the window that asked for it. Pressing Escape cancels the request and keeps the window open.
+
+## Everywhere else
+- The sidebar, command bar, Library, Split View, Peek, Little Open, Boosts, Site Control, Settings, Downloads and extensions all received many fixes. Most of them are cases where the screen did not update, a shortcut went to the wrong window, or a menu item was available when it should not be.
+- VoiceOver reads more controls correctly.
+- Open starts its background services (tab sleep, ad blocking, the updater) even if you close the first page before it finishes loading.
 ]]></description>
-            <enclosure url="https://github.com/SergeSerb2/open-releases/releases/download/v0.1.6/Open-0.1.6.dmg" length="165988522" type="application/octet-stream" sparkle:edSignature="oiUdTEgjJmBsJgJdIsG2eZZ4dTaU0zKF0iN5DaxfkOCm9XDpZTlN3qDVJYENaPRP8qTOzTAZM+c2hE9zIwcGAg=="/>
+            <enclosure url="https://github.com/SergeSerb2/open-releases/releases/download/v0.1.7/Open-0.1.7.dmg" length="166445035" type="application/octet-stream" sparkle:edSignature="We1E28FwDxtCSgjgV1ztQtwDP7jzn55cpZRonSwFh6oo0oED9WGt0tAg3/roUS9m83DTsCl66buLlY/OvvAEDg=="/>
         </item>
     </channel>
 </rss>
